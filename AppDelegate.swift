@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //replace the XXXXXs with your own id
         let credentialProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
-        identityPoolId:"us-east-1:84171d29-f87d-4dbb-aff6-53292255e1ff")
+        identityPoolId:"us-east-X:XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX")
         let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         //change "withBotName:" to the name of your Lex bot
